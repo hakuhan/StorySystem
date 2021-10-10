@@ -48,7 +48,6 @@ public class StoryEditor : ModuleRules
 				"EditorScriptingUtilities",
 				"UMGEditor",
 				"DesktopPlatform",
-				"UnrealEd",
 				"StorySystem"
 				// ... add private dependencies that you statically link with here ...	
 			}

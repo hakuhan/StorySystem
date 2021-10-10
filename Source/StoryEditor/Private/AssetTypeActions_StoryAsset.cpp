@@ -1,9 +1,8 @@
 #include "AssetTypeActions_StoryAsset.h"
 #include "StoryAsset.h"
-// #include "StoryEditor.h"
 #include "StoryEditorFunctionLibrary.h"
 
-#define LOCTEXT_NAMESPACE "StoreAsset"
+#define LOCTEXT_NAMESPACE "StoryAsset"
 
 FColor FAssetTypeActions_StoryAsset::GetTypeColor() const
 {
@@ -12,7 +11,7 @@ FColor FAssetTypeActions_StoryAsset::GetTypeColor() const
 
 FText FAssetTypeActions_StoryAsset::GetName() const
 {
-    return LOCTEXT("StoreAssetTypeActions", "StoreAsset");
+    return LOCTEXT("StoreAssetTypeActions", "StoryAsset");
 }
 
 void FAssetTypeActions_StoryAsset::OpenAssetEditor(const TArray<UObject *> &InObjects, TSharedPtr<class IToolkitHost> EditWithinLevelEditor)
