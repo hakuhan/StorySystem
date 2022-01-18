@@ -36,7 +36,8 @@ public class StorySystem : ModuleRules
 			{
 				"Projects",
 				"InputCore",
-				"EditorFramework",
+				// UE5
+				// "EditorFramework",
 				"UnrealEd",
 				"ToolMenus",
 				"CoreUObject",
