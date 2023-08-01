@@ -8,7 +8,7 @@
 #include "StoryAssetFactory.generated.h"
 
 UCLASS()
-class STORYSYSTEM_API UStoryAssetFactory : public UFactory
+class STORYEDITOR_API UStoryAssetFactory : public UFactory
 {
     GENERATED_BODY()
 public:
@@ -19,7 +19,7 @@ public:
         SupportedClass = UStoryAsset::StaticClass();
     }
 
-    virtual UObject *FactoryCreateNew(UClass *InClass, UObject *InParent, FName InName, EObjectFlags Flags, UObject *Context, FFeedbackContext *Warn, FName CallingContext)
+    UObject* FactoryCreateFile(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, const FString& Filename, const TCHAR* Parms, FFeedbackContext* Warn, bool& bOutOperationCanceled)
     {
         return NewObject<UStoryAsset>(InParent, InName, Flags | RF_Transactional);
     }
